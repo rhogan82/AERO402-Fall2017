@@ -10,8 +10,9 @@ void ISRU_Auger::load(double amount)
 	contents = amount;
 }
 
-struct ISRU_Auger::unload()
+out ISRU_Auger::unload()
 {
+	out processed;		
 	processed.water = contents*.03;
 	processed.sulfer = contents*.03;
 	processed.soil = contrents*.96;
