@@ -7,7 +7,7 @@ public:
 	void Power(double power_supplied);
 	double Output(double power_supplied);
 
-	double capacity;
+	double capacity; //in kg
 	double contents;
 	double demand; // in kW
 	double max_rate; //Rate at which plant will produce resources if fully powered (kg/hr)

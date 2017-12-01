@@ -28,7 +28,7 @@ double ISRU_Plant :: Output(double power_supplied)
 
 	if (power_supplied < demand)
 	{
-		return max_rate * (power_supplied / demand); // in kg/hr
+		return max_rate * (power_supplied / demand); //in kg/hr
 	}
 
 	else {

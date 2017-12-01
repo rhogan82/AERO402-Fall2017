@@ -1,0 +1,32 @@
+﻿  tank_test.cpp
+tank_test.cpp(12): error C2248: 'ISRU_Tank::Get_Capacity': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(25): note: see declaration of 'ISRU_Tank::Get_Capacity'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(13): error C2248: 'ISRU_Tank::Get_Contents': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(26): note: see declaration of 'ISRU_Tank::Get_Contents'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(14): error C2248: 'ISRU_Tank::Get_Demand': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(27): note: see declaration of 'ISRU_Tank::Get_Demand'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(18): error C2248: 'ISRU_Tank::Power': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(19): note: see declaration of 'ISRU_Tank::Power'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(20): error C2248: 'ISRU_Tank::Add': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(20): note: see declaration of 'ISRU_Tank::Add'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(22): error C2248: 'ISRU_Tank::Get_Contents': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(26): note: see declaration of 'ISRU_Tank::Get_Contents'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(26): error C2248: 'ISRU_Tank::Take': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(21): note: see declaration of 'ISRU_Tank::Take'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+tank_test.cpp(29): error C2248: 'ISRU_Tank::Get_Contents': cannot access private member declared in class 'ISRU_Tank'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(26): note: see declaration of 'ISRU_Tank::Get_Contents'
+  c:\users\logan fleming\documents\isru_new\402_integration\isru\ISRU_Tank.h(4): note: see declaration of 'ISRU_Tank'
+  ISRU_Tank.cpp
+  ISRU_Rassor.cpp
+  ISRU_Plant.cpp
+  ISRU_Auger.cpp
+  Generating Code...
+c:\users\logan fleming\documents\isru_new\402_integration\isru\isru_rassor.cpp(91): warning C4715: 'ISRU_Rassor::Take': not all control paths return a value
+c:\users\logan fleming\documents\isru_new\402_integration\isru\isru_rassor.cpp(54): warning C4715: 'ISRU_Rassor::Add': not all control paths return a value
