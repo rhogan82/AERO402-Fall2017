@@ -1,12 +1,11 @@
-#ifndef PLANT_H
-#define PLANT_H
+#pragma once
 
 class ISRU_Plant
 {
 public:
-	ISRU_Plant(double, double);
-	void Power(double);
-	double Output(double);
+	ISRU_Plant(double max, double pow);
+	void Power(double power_supplied);
+	double Output(double power_supplied);
 
 	double capacity;
 	double contents;
@@ -18,5 +17,3 @@ public:
 	bool low_pressure;
 
 };
-
-#endif

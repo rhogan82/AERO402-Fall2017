@@ -1,19 +1,9 @@
-#ifndef TANK_H
-#define TANK_H
+#pragma once
 
 class ISRU_Tank
 {
 	public:
-		ISRU_Tank(double, double, double, double);
-		void Power(double);
-		double Add(double);
-		double Take(double);
-
-		// the accsesors
-		double Get_Total_Mass();
-		double Get_Capacity();
-		double Get_Contents();
-		double Get_Demand();
+		ISRU_Tank(double cap, double con, double pow, double mass_of_tank);
 
 	private:
 		double mass;
@@ -25,7 +15,14 @@ class ISRU_Tank
 		bool powered;
 		bool high_pressure;
 		bool low_pressure;
-		
-};
 
-#endif
+		void Power(double power_suuplied);
+		double Add(double amount);
+		double Take(double amount);
+
+		// Accesor functions
+		double Get_Total_Mass();
+		double Get_Capacity();
+		double Get_Contents();
+		double Get_Demand();
+};

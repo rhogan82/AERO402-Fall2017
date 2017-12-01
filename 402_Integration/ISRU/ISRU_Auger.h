@@ -1,15 +1,12 @@
-#ifndef AUGER_H
-#define AUGER_H
+#pragma once
 
-struct out{double water; double sulfer; double soil};
+struct out { double water; double sulfer; double soil; };
 
 class ISRU_Auger
 {
 public:
 	ISRU_Auger();
-	void load(double);
+	void load(double amount);
 	out unload();
-	double contents;
+	double contents; //in kg
 };
-
-#endif
