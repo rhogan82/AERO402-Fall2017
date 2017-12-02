@@ -37,9 +37,9 @@ void UNewActorComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 	Power_Level = new ROB_Power();
 	//F = new AActor();
 	//A = F->GetVelocity();
-	A = F->GetVelocity();
+	//A = F->GetVelocity();
 	//B = { 0.,0.,0. };
-	//double A = 1;
+	double A = 1;
 		if (A == A){
 			movement = true;
 			x = 0;
