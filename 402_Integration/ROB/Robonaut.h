@@ -37,8 +37,7 @@ PROGRAMMERS:
 **************************************************************************/
 
 // NOTE: Format changes and a couple of bugs are still being worked on.
-/*Include this in all header files*/
-#pragma once
+
 
 /*includes necessary for the header file. Minimize these if possible*/
 #pragma once
@@ -48,32 +47,37 @@ PROGRAMMERS:
 #include "Robonaut.generated.h"
 
 UCLASS()
-class ROBONAUTTEST_API ARobonaut : public AActor
+class MARSDTMLANDSCAPE_API ARobonaut : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
 	ARobonaut();
-
-	double ObjectLocation[3][10];	/* i m	position (X,Y,Z coordinates)*/
-	double ROBLocation[3];			/*i m	X,Y,Z coordinates*/
-	double ROBGoal[3];				/*i m	X,Y,Z coordinates*/
-	double ROBvelocity[3];				/*o m/s The change in robots position per second in X,Y,Z*/
-	void ROB_Pathing();
+	int num;
+	float ObjectLocation[10][3];	/* i m	position (X,Y,Z coordinates)*/
+	//float ROBLocation[3];			/*i m	X,Y,Z coordinates*/
+	float ROBGoal[3];				/*i m	X,Y,Z coordinates*/
+	float ROBvelocity[3];				/*o m/s The change in robots position per second in X,Y,Z*/
+	float ROB_Pathing();
+	float Distance[10];
+	float p_r_gradient[10][3];
+	float PV[10][3]; // hard code in number of objects
+	float a;
+	float b;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 private:
 
-	double vmax = 1.0; //set maximum velocity for robot
-	double Q_Star = 5.0; //Set distance at which objects start "affecting" robot path
-	double eta = 1.0; //weight for objects
-	double zeta = 2.0; //Weight factor for goal
+	float vmax = 1.0; //set maximum velocity for robot
+	float Q_Star = 1000.0; //Set distance at which objects start "affecting" robot path
+	float eta = -10.1; //weight for objects
+	float zeta = 2.0; //Weight factor for goal
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	double RunningTime;
-	
+
+	float RunningTime;
 	
 };
