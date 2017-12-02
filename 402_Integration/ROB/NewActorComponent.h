@@ -27,10 +27,10 @@ public:
 	//AActor* GetVelocity();
 	//AActor* FVector;
 	//AActor* GetVelocity;
-	AActor* F;
+	//AActor* F;
 	//AActor* ZeroVector;
 	ROB_Power* Power_Level;
-	FVector A = { 1,0,0 };
+	//FVector A = { 1,0,0 };
 	//FVector B = FVector(0.3);
 	double powerlevel;
 	double x;
