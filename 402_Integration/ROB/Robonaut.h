@@ -47,22 +47,24 @@ PROGRAMMERS:
 #include "Robonaut.generated.h"
 
 UCLASS()
-class MARSDTMLANDSCAPE_API ARobonaut : public AActor
+class MYPROJECT4_API ARobonaut : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
 	// Sets default values for this actor's properties
 	ARobonaut();
 	int num;
 	float ObjectLocation[10][3];	/* i m	position (X,Y,Z coordinates)*/
-	//float ROBLocation[3];			/*i m	X,Y,Z coordinates*/
+									//float ROBLocation[3];			/*i m	X,Y,Z coordinates*/
 	float ROBGoal[3];				/*i m	X,Y,Z coordinates*/
 	float ROBvelocity[3];				/*o m/s The change in robots position per second in X,Y,Z*/
 	float ROB_Pathing();
 	float Distance[10];
 	float p_r_gradient[10][3];
 	float PV[10][3]; // hard code in number of objects
+	float TotalP_r_gradient[3];
+	//float ForwardVec[3];
 	float a;
 	float b;
 protected:
@@ -71,13 +73,17 @@ protected:
 private:
 
 	float vmax = 1.0; //set maximum velocity for robot
-	float Q_Star = 1000.0; //Set distance at which objects start "affecting" robot path
-	float eta = -10.1; //weight for objects
+	float Q_Star = 100.0; //Set distance at which objects start "affecting" robot path
+	float eta = -10000000.0; //weight for objects
 	float zeta = 2.0; //Weight factor for goal
-public:	
+	float d_goal; // distance to goal
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	float RunningTime;
-	
+
 };
+
+	
+
