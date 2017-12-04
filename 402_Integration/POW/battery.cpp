@@ -52,7 +52,7 @@ void Battery::Charge_Check(double time, double inputPow){
 			Capacity = Capacity + inputPow*time;
 		}
 		else if (ifdecharging) {
-			outputpow = 270*num_unit;
+			outputpow = 0.27*num_unit;
 			Capacity = Capacity - outputpow*time;
 		}
 		else {
